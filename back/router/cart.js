@@ -18,5 +18,5 @@ routerCart.get ('/', async (req, res) => {
 
 routerCart.delete ('/:id', async (req, res) =>{
     const orderDelete = await cart.deleteOrderById(req.params.id)
-    res.send ('Eliminado')    
+    res.send (orderDelete)    
 })
